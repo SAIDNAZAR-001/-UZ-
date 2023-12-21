@@ -1,0 +1,415 @@
+/* PROJECTS - START */
+
+.projects{
+
+  &-title{
+    @extend %flex-between;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    @include media(924){
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__text{
+      color: $black-color;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 123.81%;
+
+      @include media(1140){
+        font-size: 38px;
+      }
+      @include media(1024){
+        font-size: 28px;
+      }
+    }
+    &__achievement{
+      @extend %flex-between;
+      gap: 40px;
+
+      @include media(660){
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &__left{
+        @extend %flex-between;
+        gap: 24px;
+
+        &__text1{
+          color: $text-color;
+          font-size: 52px;
+          font-weight: 700;
+          line-height: 100%;
+
+          @include media(1140){
+            font-size: 45px;
+          }
+          @include media(1024){
+            font-size: 42px;
+          }
+        }
+        &__text2{
+          color: $black-color;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 129.412%;
+
+          @include media(1140){
+            font-size: 15px;
+          }
+        }
+      }
+      &__right{
+        @extend %flex-between;
+        gap: 24px;
+
+        &__text1{
+          color: $text-color;
+          font-size: 52px;
+          font-weight: 700;
+          line-height: 100%;
+
+          @include media(1140){
+            font-size: 45px;
+          }
+          @include media(1024){
+            font-size: 42px;
+          }
+        }
+        &__text2{
+          color: $black-color;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 129.412%;
+
+          @include media(1140){
+            font-size: 15px;
+          }
+          
+        }
+      }
+    }
+  }
+
+  &-img{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-top{
+      width: 100%;
+      height: 380px;
+      position: relative;
+      z-index: 1;
+
+      img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        border-radius: 40px;
+      }
+
+      &__p{
+        width: 74px;
+        height: 74px;
+        background-color:$green-color;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+        top: 30px;
+        right: 30px;
+
+        &:hover{
+          background-color:#9bc75e;
+        }
+
+        p{
+          color: $white-color;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 100%;
+        }
+      }
+
+      &__imge{
+        display: flex;
+        align-items: last baseline;
+        gap: 5px;
+        position: absolute;
+        z-index: 2;
+        left: 42%;
+        bottom: 30px;
+
+        &__imge1{
+          width: 49px;
+          height: 5px;
+          border-radius: 6px;
+          background: $white-color;
+          position: relative;
+          z-index: 2;
+        }
+        &__imge2{
+          width: 49px;
+          height: 5px;
+          border-radius: 6px;
+          background: $green-color;
+          position: relative;
+          z-index: 2;
+        }
+        &__imge3{
+          width: 49px;
+          height: 5px;
+          border-radius: 6px;
+          background: $white-color;
+          position: relative;
+          z-index: 2;
+        }
+        &__imge4{
+          width: 49px;
+          height: 5px;
+          border-radius: 6px;
+          background: $white-color;
+          position: relative;
+          z-index: 2;
+        }
+      }
+
+      &__svg{
+        width: 74px;
+        height: 74px;
+        position: absolute;
+        z-index: 2;
+        bottom : 30px;
+        right: 30px;
+
+        svg circle:hover{
+          fill:#f3eeee;
+        } 
+        
+      }
+    }
+
+    &-botton{
+      width: 100%;
+      height: 500px;
+      display: flex;
+      gap: 20px;
+      
+      &-left{
+        width: 32%;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+  
+        img{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          border-radius: 40px;
+        }
+  
+        &__p{
+          width: 74px;
+          height: 74px;
+          background-color:$green-color;
+          border-radius: 50%;
+          position: absolute;
+          z-index: 2;
+          top: 30px;
+          right: 30px;
+  
+          &:hover{
+            background-color:#9bc75e;
+          }
+  
+          p{
+            color: $white-color;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 100%;
+          }
+        }
+  
+        &__imge{
+          display: flex;
+          align-items: last baseline;
+          gap: 5px;
+          position: absolute;
+          z-index: 2;
+          left: 25%;
+          bottom: 30px;
+  
+          &__imge1{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $white-color;
+            position: relative;
+            z-index: 2;
+          }
+          &__imge2{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $green-color;
+            position: relative;
+            z-index: 2;
+          }
+          &__imge3{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $white-color;
+            position: relative;
+            z-index: 2;
+          }
+          &__imge4{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $white-color;
+            position: relative;
+            z-index: 2;
+          }
+        }
+  
+        &__svg{
+          width: 74px;
+          height: 74px;
+          position: absolute;
+          z-index: 2;
+          bottom : 30px;
+          right: 30px;
+          display: none;
+  
+          svg circle:hover{
+            fill:#f3eeee;
+          } 
+          
+        }
+
+      }
+      &-right{
+        width: 68%;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+  
+        img{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          border-radius: 40px;
+        }
+  
+        &__p{
+          width: 74px;
+          height: 74px;
+          background-color:$text-color;
+          border-radius: 50%;
+          position: absolute;
+          z-index: 2;
+          top: 30px;
+          right: 30px;
+  
+          &:hover{
+            background-color:#98a7ec;
+          }
+  
+          p{
+            color: $white-color;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 100%;
+          }
+        }
+  
+        &__imge{
+          display: flex;
+          align-items: last baseline;
+          gap: 5px;
+          position: absolute;
+          z-index: 2;
+          left: 38%;
+          bottom: 30px;
+  
+          &__imge1{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $white-color;
+            position: relative;
+            z-index: 2;
+          }
+          &__imge2{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $text-color;
+            position: relative;
+            z-index: 2;
+          }
+          &__imge3{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $white-color;
+            position: relative;
+            z-index: 2;
+          }
+          &__imge4{
+            width: 49px;
+            height: 5px;
+            border-radius: 6px;
+            background: $white-color;
+            position: relative;
+            z-index: 2;
+          }
+        }
+  
+      }
+    }
+
+  }
+
+  &-button{
+    @extend %flex-between;
+    justify-content: center;
+    margin-top: 40px;
+
+    &__buttons{
+      display: inline-flex;
+      padding: 16px 20px;
+      align-items: center;
+      border-radius: 60px;
+      background: $text-color;
+      @extend %flex-between;
+      gap: 14px;
+
+      &:hover{
+        background-color: #98a7ec;
+      }
+
+      &__p{
+        color: $white-color;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 184.615%;
+        letter-spacing: 0.52px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}
+
+/* PROJECTS - END */

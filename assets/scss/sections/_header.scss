@@ -1,0 +1,73 @@
+/* HEADER - START */
+
+.header{
+
+
+    &-row{
+        @extend %flex-between;
+        justify-content: space-between;
+
+        
+    }
+    &-nav{
+        @extend %flex-between;
+        gap: 40px;
+
+
+        @include media(1145){
+            gap: 20px;
+        }
+        @include media(1015){
+            display: none;
+        }
+        
+
+        a{
+            color: $black-color;
+            font-size: 15px;
+            font-weight: 700;
+
+            &:hover{
+                color: #778CEB;
+            }
+        }
+    }
+    &-form{
+        @extend %flex-between;
+        gap: 32px;
+
+        @include media(560){
+            display: none;
+        }
+        
+    }
+    &-form1{
+        @extend %flex-between;
+        gap: 10px;
+    }
+    &-form2{
+        @extend %flex-between;
+        gap: 10px;
+    }
+
+    &-button{
+        @extend %flex-between;
+        gap: 20px;
+    }
+    &-buttons{
+        @include media(765){
+        }
+    }
+
+
+    &-mobile{
+        display: none;
+
+        @include media(1015){
+            display: block;
+        }
+    }
+}
+
+
+/* HEADER - END */
