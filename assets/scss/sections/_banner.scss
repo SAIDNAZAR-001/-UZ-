@@ -170,7 +170,11 @@
                     background: $white-color;
 
                     &:hover{
-                        background-color: $red-color;
+                        background-color: #ddd8d8;
+                        
+                        p{
+                            color: $white-color;
+                        }
                     }
 
                     p{

@@ -281,7 +281,10 @@ input {
   background: #fff;
 }
 .banner__wrap__right__banner__buttons:hover {
-  background-color: #ED145B;
+  background-color: #ddd8d8;
+}
+.banner__wrap__right__banner__buttons:hover p {
+  color: #fff;
 }
 .banner__wrap__right__banner__buttons p {
   color: #131313;
