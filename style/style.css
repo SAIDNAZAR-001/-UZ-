@@ -206,6 +206,13 @@ input {
   bottom: -2px;
   right: 0;
 }
+@media screen and (max-width: 1090px) {
+  .banner__wrap__left img {
+    width: 253px;
+    height: 148.343px;
+    flex-shrink: 0;
+  }
+}
 @media screen and (max-width: 440px) {
   .banner__wrap__left img {
     width: 253px;

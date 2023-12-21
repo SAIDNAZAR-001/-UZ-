@@ -92,6 +92,11 @@
                 bottom: -2px;
                 right: 0;
 
+                @include media(1090){
+                    width: 253px;
+                    height: 148.343px;
+                    flex-shrink: 0;
+                }
                 @include media(440){
                     width: 253px;
                     height: 148.343px;
