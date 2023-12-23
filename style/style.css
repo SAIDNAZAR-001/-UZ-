@@ -1376,9 +1376,13 @@ input {
   width: 100%;
   height: 360px;
   gap: 21px;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
   margin-bottom: 31px;
+}
+@media screen and (max-width: 1320px) {
+  .price-img {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
 }
 .price-img__building {
   min-width: 304px;
@@ -1430,11 +1434,14 @@ input {
   width: 100%;
   height: 400px;
   gap: 46px;
+  background: #F6FAFF;
+  border-radius: 40px;
 }
 .price-prices__left {
   width: 68%;
   height: 100%;
   padding-left: 50px;
+  padding-top: 46px;
   border-radius: 40px;
   background: #F6FAFF;
   position: relative;
@@ -1452,15 +1459,36 @@ input {
   background: #778CEB;
 }
 .price-prices__left__capital__title {
-  width: 225px;
+  width: 100%;
   height: 60px;
   color: #778CEB;
   font-size: 18px;
   font-weight: 700;
   line-height: 166.667%;
+  display: flex;
+  justify-content: space-between;
 }
-.price-prices__left__capital__title span {
+.price-prices__left__capital__title__text {
   color: #778CEB;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 166.667%;
+}
+.price-prices__left__capital__title__text span {
+  color: #778CEB;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+}
+.price-prices__left__capital__title__text2 {
+  color: #C1CCFB;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 166.667%;
+}
+.price-prices__left__capital__title__text2 span {
+  color: #C1CCFB;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 700;
@@ -1493,7 +1521,16 @@ input {
   text-transform: uppercase;
 }
 .price-prices__left__capital__buttons:hover {
-  background-color: #FFEBEB;
+  background-color: #778CEB;
+}
+.price-prices__left__capital__buttons:hover p {
+  color: #fff;
+}
+.price-prices__left__capital__buttons:hover svg circle {
+  fill: #fff;
+}
+.price-prices__left__capital__buttons:hover svg path {
+  fill: #778CEB;
 }
 .price-prices__left__cosmetic {
   width: 100%;
@@ -1515,6 +1552,7 @@ input {
   font-weight: 700;
   line-height: 166.667%;
   position: absolute;
+  display: none;
 }
 .price-prices__left__cosmetic__title span {
   color: #778CEB;
@@ -1522,6 +1560,9 @@ input {
   font-size: 16px;
   font-weight: 700;
   line-height: 187.5%;
+}
+.price-prices__left__cosmetic__title span:hover {
+  background-color: #778CEB;
 }
 .price-prices__left__cosmetic__sobtitle {
   color: #131313;
@@ -1552,6 +1593,66 @@ input {
   text-transform: uppercase;
 }
 .price-prices__left__cosmetic__buttons:hover {
+  background-color: #FFEBEB;
+}
+.price-prices__left__euro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.price-prices__left__euro hr {
+  margin-top: 20px;
+  margin-bottom: 29px;
+  background: #778CEB;
+  display: none;
+}
+.price-prices__left__euro__title {
+  width: 225px;
+  height: 60px;
+  color: #131313;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 166.667%;
+  position: absolute;
+  display: none;
+}
+.price-prices__left__euro__title span {
+  color: #778CEB;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+}
+.price-prices__left__euro__sobtitle {
+  color: #131313;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 185.714%;
+  padding-bottom: 42px;
+  display: none;
+}
+.price-prices__left__euro__buttons {
+  display: inline-flex;
+  padding: 13px 14px 13px 26px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 19px;
+  border-radius: 60px;
+  background: #fff;
+  display: none;
+}
+.price-prices__left__euro__buttons__p {
+  color: #131313;
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 184.615%;
+  letter-spacing: 0.52px;
+  text-transform: uppercase;
+}
+.price-prices__left__euro__buttons:hover {
   background-color: #FFEBEB;
 }
 .price-prices__right {
