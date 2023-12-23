@@ -101,11 +101,21 @@
     flex-direction: column;
     gap: 20px;
 
+    @include media(850){
+      height: auto;
+    }
+
     &-top{
       width: 100%;
       height: 380px;
       position: relative;
       z-index: 1;
+
+      @include media(710){
+        width: 345px;
+        height: 240px;
+        margin: 0 auto;
+      }
 
       img{
         width: 100%;
@@ -113,6 +123,7 @@
         position: absolute;
         z-index: 1;
         border-radius: 40px;
+        
       }
 
       &__p{
@@ -125,6 +136,11 @@
         top: 30px;
         right: 30px;
 
+        @include media(710){
+          width: 66px;
+          height: 66px;
+        }
+
         &:hover{
           background-color:#9bc75e;
         }
@@ -134,6 +150,10 @@
           font-size: 14px;
           font-weight: 700;
           line-height: 100%;
+
+          @include media(710){
+            font-size: 12px;
+          }
         }
       }
 
@@ -145,6 +165,10 @@
         z-index: 2;
         left: 42%;
         bottom: 30px;
+
+        @include media(710){
+          left: 22%;
+        }
 
         &__imge1{
           width: 49px;
@@ -188,6 +212,10 @@
         bottom : 30px;
         right: 30px;
 
+        @include media(710){
+          display: none;
+        }
+
         svg circle:hover{
           fill:#f3eeee;
         } 
@@ -200,12 +228,27 @@
       height: 500px;
       display: flex;
       gap: 20px;
+
+      @include media(850){
+        height: auto;
+        align-items: center;  
+        flex-direction: column;
+      }
       
       &-left{
         width: 32%;
         height: 500px;
         position: relative;
         z-index: 1;
+
+        @include media(980){
+          min-width: 300px;
+        }
+
+        @include media(850){
+          width: 345px;
+          height: 467px;
+        }
   
         img{
           width: 100%;
@@ -225,9 +268,19 @@
           z-index: 2;
           top: 30px;
           right: 30px;
+
+          @include media(710){
+            width: 66px;
+            height: 66px;
+            background-color: $text-color;
+          }
   
           &:hover{
             background-color:#9bc75e;
+
+            @include media(710){
+              background-color: #96a6ec;
+            }
           }
   
           p{
@@ -235,6 +288,10 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 100%;
+
+            @include media(710){
+              font-size: 12px;
+            }
           }
         }
   
@@ -246,6 +303,10 @@
           z-index: 2;
           left: 25%;
           bottom: 30px;
+
+          @include media(710){
+            left: 18%;
+          }
   
           &__imge1{
             width: 49px;
@@ -262,6 +323,10 @@
             background: $green-color;
             position: relative;
             z-index: 2;
+
+            @include media(710){
+              background-color: $text-color;
+            }
           }
           &__imge3{
             width: 49px;
@@ -289,6 +354,18 @@
           bottom : 30px;
           right: 30px;
           display: none;
+
+          @include media(710){
+            display: flex;
+            width: 41px;
+            height: 41px;
+            right: 24px;
+            bottom: 59px;
+
+            svg{
+              color: $text-color;
+            }
+          }
   
           svg circle:hover{
             fill:#f3eeee;
@@ -302,6 +379,14 @@
         height: 500px;
         position: relative;
         z-index: 1;
+
+        @include media(850){
+          width: 100%;
+        }
+        @include media(710){
+          width: 345px;
+          height: 240px;
+        }
   
         img{
           width: 100%;
@@ -320,6 +405,12 @@
           z-index: 2;
           top: 30px;
           right: 30px;
+
+          @include media(710){
+            width: 66px;
+            height: 66px;
+            background-color: $text-color;
+          }
   
           &:hover{
             background-color:#98a7ec;
@@ -330,6 +421,10 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 100%;
+
+            @include media(710){
+              font-size: 12px;
+            }
           }
         }
   
@@ -341,6 +436,10 @@
           z-index: 2;
           left: 38%;
           bottom: 30px;
+
+          @include media(710){
+            left: 18%;
+          }
   
           &__imge1{
             width: 49px;
@@ -357,6 +456,10 @@
             background: $text-color;
             position: relative;
             z-index: 2;
+
+            @include media(710){
+              background-color: $text-color;
+            }
           }
           &__imge3{
             width: 49px;
